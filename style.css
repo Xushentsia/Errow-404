@@ -1,0 +1,298 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(100deg, #521E86, #1E0f77) no-repeat;
+}
+div, p, input, button, form, span, a, ul, li{
+	box-sizing: border-box; 
+}
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 2%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+p {
+	font-weight: 400;
+	font-size: 16px;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/* Шапка */
+header{
+	padding-top: 14px;
+	color: #fff;
+}
+.logo {
+	margin-left: 14px;
+}
+.wrapper{
+	display: flex;
+}
+.links_kon {
+	display: flex;
+	align-items: center;
+	margin-left: 135px;
+}
+.kontakt{
+	padding-right: 25px;
+}
+.desktop{
+	opacity: 0.3;
+	width: 891px;
+	position: absolute; 
+	right:0; 
+	top:0;
+}
+.overflow{
+	position: absolute; 
+	right:801px; 
+	top:0;
+}
+
+/* Первый экран */
+.offer{
+	padding-top: 109px;
+	width: 440px;
+}
+span{
+	color: #ACB733;
+}
+.illustration{
+	width:440px;
+	margin-top: 30px; 
+}
+h1{
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+/* Наша миссия */
+.mission{
+	margin-top: 145px;
+}
+.text_mission{
+	padding-top: 45px;
+	text-align: justify;
+}
+
+/* Как это выглядит */
+.look{
+	margin-top: 101px;
+}
+.look_imgs{
+	padding-top: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.l_img {
+	width: 566px;
+}
+
+/* Как это работает */
+.work{
+	margin-top: 101px;
+}
+.text_work{
+	padding-top: 45px;
+	text-align: justify;
+}
+
+/* Стек технологий */
+.stack{
+	margin-top: 145px;
+}
+.wrapper_stack{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.stacks_t{
+	display: inline;
+	padding-left: 37px;
+}
+.s_img{
+	padding-top: 45px;
+	padding-left: 62px;
+}
+.text_stack{
+	float: right;
+	width: 469px;
+	text-align: justify;
+}
+.document{
+	text-decoration: none;
+	color: #ACB733;
+}
+
+/* Подвал */
+footer{
+	background: #10044E;
+	margin-top: 101px;
+}
+.wrapper_footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 26px 0;
+}
+.logo_pod{
+	display: inline;
+}
+.logotype{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.links_pod {
+	margin-left: 0;
+}
+.made_text_2{
+	display: none;
+}
+
+/* Responsive */
+
+/* 1200px - 1400px */
+@media screen and (max-width: 1500px) {
+	.container {
+		width: 90%;
+	}
+	.overflow{
+		display: none;
+	}
+	.desktop {
+		width: 700px;
+		top: 100px;
+	}
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.links_kon{
+		position: absolute;
+		right: 0;
+		margin-top: 10px;
+	}
+	.illustration {
+		display: none;
+	}
+	.offer{
+		width: 100%;
+		text-align: center;
+	}
+	.arts{
+		margin-top: 30px;
+	}
+	.desktop{
+		position: static;
+		width: 100%;
+	}
+	.l_img{
+		width: 470px;
+	}
+	.made_text{
+		margin-right: 200px;
+	}
+	.made_text_2{
+		display: none;
+	}
+	
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.look_imgs{
+		display: block;
+	}
+	.l_img{
+		width: 550px;
+	}
+	.l_img_2{
+		margin-top: 20px;
+	}
+	.kon_img{
+		width: 80%;
+	}
+	.kontakt{
+		padding-right: 10px;
+	}
+	.made_text{
+		font-size: 12px;
+		margin-right: 130px;
+	}
+	.logo_pod{
+		font-size: 85%;
+	}
+	.made_text_2{
+		display: none;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.l_img{
+		width: 100%;
+	}
+	.made_text{
+		display: none;
+	}
+	.made_text_2{
+		display: block;
+		margin: 0;
+		padding-bottom: 25px;
+		padding-left: 35px;
+		font-size: 15px;
+	}
+	.wrapper_footer{
+		padding-bottom: 20px;
+	}
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.kon_img_soc{
+		display: none;
+	}
+	.stack{
+		margin-top: 100px;
+	}
+	.s_img{
+   		padding-left: 0;
+	}
+	.stack_imgs{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.wrapper_stack{
+		display: block;
+		margin-bottom: 100px;
+	}
+	.text_stack{
+		width: 100%;
+		margin-top: 45px;
+		float: none;
+	}
+	.made_text_2{
+		text-align: center;
+		padding-left: 10px;
+	}
+}
